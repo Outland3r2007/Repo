@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html class="ios ios-translucent-bars ios-translucent-modals device-pixel-ratio-2 device-ios" style="--f7-theme-color: #4676EC; --f7-theme-color-rgb: 29, 161, 242;"><head>
+       <meta name="theme-color" content="#684ED4">
+       <meta name="format-detection" content="telephone=no">
+       <meta name="msapplication-tap-highlight" content="no">
        <meta property="og:site_name" content="tweakra1n">
        <meta property="og:title" content="tweakra1n">
        <meta property="og:type" content="website">
@@ -15,13 +18,15 @@
        <title>tweakra1n</title>
        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/framework7@7.1.1/framework7-bundle.min.css" integrity="sha256-7C3Qv59sVW6ZMiR75dFNVCsM2PGoKmV9T/j+UFXduvI=" crossorigin="anonymous">
        <link rel="stylesheet" href="css/app.css">
-       <link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" href="css/css.css">
+       <link rel="stylesheet" href="manifest.json">
        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/framework7-icons@5.0.5/css/framework7-icons.css" integrity="sha256-RSzKDnaL5c8/Ksi7QeDBiOtJSr5k3LbqDGqs4NKDl7M=" crossorigin="anonymous">
       <link rel="apple-touch-icon" href="assets/favicon.ico">
       <link rel="icon" href="assets/favicon.ico"> 
       <noscript>This app requires Javascript enabled to run.</noscript>
       <noscript>Go to Settings>Safari>Advanced and enable Javascript</noscript>
-      <div id="app" class="framework7-root">
+      <div id="app"
+       class="framework7-root">   
         <div class="views tabs">
             <div style="height:50px" class="toolbar tabbar toolbar-bottom">
                 <div style="height:50px;" class="toolbar-inner">
@@ -39,68 +44,76 @@
           <div class="navbar-inner">
             <div class="title sliding">tweakra1n</div>
             <div class="right">
+            <a onclick="location='https://ios.cfw.guide'" class="item-link item-content"><i class="f7-icons">lock_open_fill</i></a>
+            <a onclick="location.reload();"><i class="f7-icons">arrow_2_circlepath</i></a>
             </div>
             <div class="title-large">
               <div class="title-large-text">tweakra1n</div>
             </div>
           </div>
-        </div>
+        </div>   
                     <div class="tabs">
                         <div id="tab1" class="tab tab-active">
                             <div data-page="index" class="page">
                                 <div class="page-content" style="">
+                                <h5 style="font-family:arial;margin-left:20px;font-size:13px;">	                                                                     
+<p id="greetings"><b></b></p>
+<script>
+var myDate = new Date();
+var hrs = myDate.getHours();
+
+var greet;
+
+if (hrs < 12)
+  greet = 'Good Morning ☀️';
+else if (hrs >= 12 && hrs <= 17)
+  greet = 'Good Afternoon 🥱';
+else if (hrs >= 17 && hrs <= 24)
+  greet = 'Good Evening 🌙';
+
+document.getElementById('greetings').innerHTML ='<b>' + greet + '</b>';
+</script>
+     </h5>
 
  <div class="card card-expandable" style="">
                                       <div class="card-content" style="">
-                                      
-
-                                        <div class="bri" data-background="#" style="height: auto">
-                                       
-                                          <div class="card-header text-color-purple display-block">Welcome!<br>
+         <div class="bri" data-background="#" style="height: auto">
+          <div class="card-header text-color-purple display-block">Welcome!➚<br>
             <img style="height: 300px;" class="lazy-fade-in lazy-loaded" src="assets/welcome.png">
                                           </div>
  </a>
                                         </div>
-                                        <div class="card-content-padding">
-                                            <br>
-                                            <br>
-                                            <br>
-                               <center>             
+                                        <div class="card-content-padding">                                                      
+    <h1 style="font-size:10px;margin-left:5%;margin-top:20px;">Swipe down to close ↓</h1>                           <center>             
                                           <h1 style="font-size:20px;margin-left:5%;margin-top:20px;">Welcome to tweakra1n!</h1>
-                                </center>          <p>v1.1.0</p>
-                                <h1 style="font-size:20px;margin-left:5%;margin-top:20px;">What's new in v1.1.0?</h1>
-                                <p>•Bug fixes and improvements</p><p>•New features</p><p>•New icon(by @jam_minty)</p>
-           <h1 style="font-size:20px;margin-left:5%;margin-top:20px;">Terms of Service</h1>
-<p>By using tweakra1n you have to agree with the following terms of service:</p>
-<p>•You agree that some tweaks or apps may collect data.</p>
-<p>•You agree that we are not responsible for any damage produced by Jailbreaking apps or other apps.</p>
-<p>•You agree not to recreate,copy or sell tweakra1n.</p>
+                                          
+ <center>                                         
+</center> 
+<p>•tweakra1n is the best and the safest place to customise your iDevice,your device ,your way.</p><p>•tweakra1n is completely free and no ads forever.</p><p>•If you want to support me,just give me a follow on Twitter(@Outland3r2007)</p>             
+                               
 <h1 style="font-size:20px;margin-left:5%;margin-top:20px;">Owner & Developer</h1>
 <center>
 <img style="height: 100px;" class="lazy-fade-in lazy-loaded" src="assets/outland3r.png">
-<a href="https://twitter.com/Outland3r2007?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true">Follow @Outland3r2007</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a href="https://twitter.com/Outland3r2007?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Outland3r2007</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </center>
 <h1 style="font-size:20px;margin-left:5%;margin-top:20px;">Contributors</h1>
 </center>
 <img style="height: 100px;" class="lazy-fade-in lazy-loaded" src="https://pbs.twimg.com/profile_images/1504537598684979201/Vlyzpdja_400x400.jpg">
-<a href="https://twitter.com/jam_minty?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true">Follow @jam_minty</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a href="https://twitter.com/jam_minty?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @jam_minty</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </center>
                                 
 </p></div> 
                                         
                                       </div>   
 
-                                    </div>
-
- 
-                                    
+    </div>  
                                     <div class="block-title">Featured</div>
                                     <div class="list media-list inset">
                                         <ul>
                                             
                                  <li>
                                                 <a onclick="location='https://apps.apple.com/ro/app/chroma-hue/id6444013215'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="https://chromahue.dev/assets/img/icon.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;" class="lazy-fade-in lazy-loaded" src="https://chromahue.dev/assets/img/icon.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">Chroma Hue</div>
@@ -111,7 +124,8 @@
                                             </li>   
                                 <li>
                                                 <a onclick="location='https://apps.apple.com/ro/app/screenshotsl/id1658857348'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="assets/screenshotsl.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                     class="lazy-fade-in lazy-loaded"                             src="assets/screenshotsl.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">screenshotSL</div>
@@ -123,7 +137,8 @@
 
 <li>
                                                 <a onclick="location='https://apps.apple.com/ro/app/morfic/id1663728720'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="assets/morfic.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                    class="lazy-fade-in lazy-loaded"                             src="assets/morfic.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">Morfic</div>
@@ -133,7 +148,8 @@
                                                 </a>
                                             </li>                    
                                             <a onclick="location='https://irespring.ml'" class="item-link item-content">
-                                                <div class="item-media"><img style="border-radius: 23.3%;" src="https://raw.githubusercontent.com/Outland3r2007/iRespring/main/favicon.ico" width="60"></div>
+                                                <div class="item-media"><img style="border-radius: 23.3%;"
+                       class="lazy-fade-in lazy-loaded"                          src="https://raw.githubusercontent.com/Outland3r2007/iRespring/main/favicon.ico" width="60"></div>
                                                 <div class="item-inner">
                                                     <div class="item-title-row">
                                                         <div class="item-title">iRespring</div>
@@ -143,7 +159,8 @@
                                             </a>
                                             
                                  <a onclick="location='https://getlem0nstore.ga'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="http://getlem0nstore.ga/img/D66F89FF-9E53-4549-B368-75390D35152E.jpeg" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                       class="lazy-fade-in lazy-loaded"                                src="http://getlem0nstore.ga/img/D66F89FF-9E53-4549-B368-75390D35152E.jpeg" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">Lem0nStore</div>
@@ -188,7 +205,8 @@
                                         <div>
                         <li>
                                                 <a onclick="location='https://t.co/7FcLOyPT6B'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="assets/blacklist.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                        class="lazy-fade-in lazy-loaded"                               src="assets/blacklist.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">Blacklist</div>
@@ -199,7 +217,8 @@
                                             </li>   
                        <li>
                                                 <a onclick="location='https://zeus.me'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="assets/default.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                        class="lazy-fade-in lazy-loaded"                               src="assets/default.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">zeus.me</div>
@@ -210,7 +229,8 @@
                                             </li>                      
                        <li>                                 
                                                 <a onclick="location='https://betaprofiles.dev'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="https://betaprofiles.dev/img/app-icon-57.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                       class="lazy-fade-in lazy-loaded"                                src="https://betaprofiles.dev/img/app-icon-57.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">BetaProfiles</div>
@@ -221,7 +241,8 @@
                                             </li>
                                             <li>
                                                 <a onclick="location='https://eonhubapp.com'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="https://eonhubapp.com/assets/icon.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                        class="lazy-fade-in lazy-loaded"                               src="https://eonhubapp.com/assets/icon.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">EonHub</div>
@@ -232,7 +253,8 @@
                                             </li>
                                <li>
                                                 <a onclick="location='https://apps.apple.com/ro/app/chroma-hue/id6444013215'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="https://chromahue.dev/assets/img/icon.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                       class="lazy-fade-in lazy-loaded"                               src="https://chromahue.dev/assets/img/icon.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">Chroma Hue</div>
@@ -243,7 +265,8 @@
                                             </li>    
                                 <li>
                                                 <a onclick="location='https://apps.apple.com/ro/app/screenshotsl/id1658857348'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="assets/screenshotsl.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                        class="lazy-fade-in lazy-loaded"                              src="assets/screenshotsl.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">screenshotSL</div>
@@ -255,7 +278,8 @@
 
 <li>
                                                 <a onclick="location='https://apps.apple.com/ro/app/showcuts/id1615409976'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="assets/show.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                        class="lazy-fade-in lazy-loaded"                               src="assets/show.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">Show</div>
@@ -267,7 +291,8 @@
 
 <li>
                                                 <a onclick="location='https://apps.apple.com/ro/app/morfic/id1663728720'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="assets/morfic.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                        class="lazy-fade-in lazy-loaded"                               src="assets/morfic.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">Morfic</div>
@@ -278,7 +303,8 @@
                                             </li>                     
                                             <li>
                                                 <a onclick="location='https://getlem0nstore.ga'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="http://getlem0nstore.ga/img/D66F89FF-9E53-4549-B368-75390D35152E.jpeg" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                       class="lazy-fade-in lazy-loaded"                               src="http://getlem0nstore.ga/img/D66F89FF-9E53-4549-B368-75390D35152E.jpeg" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">Lem0nStore</div>
@@ -289,7 +315,8 @@
                                             </li>
                                             <li>
                                                  <a onclick="location='https://nocodehub.ga'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="https://nocodehub.ga/img/NoCodeHubIcon.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                       class="lazy-fade-in lazy-loaded"                               src="https://nocodehub.ga/img/NoCodeHubIcon.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">NoCodeHub</div>
@@ -300,7 +327,8 @@
                                             </li>
                                             <li>
                                                  <a onclick="location='https://usescarlet.com'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="https://pbs.twimg.com/profile_images/1367920028813787144/cwvAQV9f_400x400.jpg" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                      class="lazy-fade-in lazy-loaded"                                src="https://pbs.twimg.com/profile_images/1367920028813787144/cwvAQV9f_400x400.jpg" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">Scarlet</div>
@@ -311,7 +339,8 @@
                                             </li>
                                             <li>
                                                 <a onclick="location='https://irespring.ml'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="https://raw.githubusercontent.com/Outland3r2007/iRespring/main/favicon.ico" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                       class="lazy-fade-in lazy-loaded"                               src="https://raw.githubusercontent.com/Outland3r2007/iRespring/main/favicon.ico" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">iRespring</div>
@@ -322,7 +351,8 @@
                                             </li>
                               <li>
                                                 <a onclick="location='https://appinstallerios.com'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="https://appinstallerios.com/Img/AppInstalleriOSIcon.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                        class="lazy-fade-in lazy-loaded"                              src="https://appinstallerios.com/Img/AppInstalleriOSIcon.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">AppInstalleriOS</div>
@@ -333,7 +363,8 @@
                                             </li>    
                                 <li>
                                                 <a onclick="location='https://projectapollo.site'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="https://projectapollo.site/assets/icons/favicon.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                        class="lazy-fade-in lazy-loaded"                               src="https://projectapollo.site/assets/icons/favicon.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">ProjectApollo</div>
@@ -345,7 +376,8 @@
                                 
                                 <li>
                                                 <a onclick="location='https://app.getzeus.app'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="https://app.getzeus.app/assets/img/256x256.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                        class="lazy-fade-in lazy-loaded"                               src="https://app.getzeus.app/assets/img/256x256.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">Zeus</div>
@@ -356,7 +388,8 @@
                                             </li>               
                                <li>
                                                 <a onclick="location='https://app.topipas.com/'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="https://app.topipas.com/img/TopIPAsLogov2.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                       class="lazy-fade-in lazy-loaded"                               src="https://app.topipas.com/img/TopIPAsLogov2.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">TopiPAs</div>
@@ -367,7 +400,8 @@
                                             </li>    
                                 <li>
                                                 <a onclick="location='https://postbox.news'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="https://www.postbox.news/assets/images/appIconSite.webp" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                        class="lazy-fade-in lazy-loaded"                               src="https://www.postbox.news/assets/images/appIconSite.webp" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">PostBox</div>
@@ -378,7 +412,8 @@
                                             </li>    
                                 <li>
                                                 <a onclick="location='https://photos.google.com/share/AF1QipOi51vtjEyORw_3h6MS6CD8EZx7X959iNPiWYMiLjScughelvQ8iL60PW9g9ErnSw?key=S0ttQW9OMUtBU19oMGNEcVpRSjQtY21hQjRCWmRn'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="assets/default.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                        class="lazy-fade-in lazy-loaded"                              src="assets/default.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">wallra1n</div>
@@ -389,7 +424,8 @@
                                             </li>                                                      
                                 <li>
                                                 <a onclick="location='https://broank.com'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="assets/broank.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                        class="lazy-fade-in lazy-loaded"                               src="assets/broank.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">Broank</div>
@@ -400,7 +436,8 @@
                                             </li>
                                 <li>
                                                 <a onclick="location='https://previewer.adalo.com/41bd283d-4a94-4b26-99f4-fade0b6f7102/?source=pwa'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="assets/iwebappstore.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                        class="lazy-fade-in lazy-loaded"                               src="assets/iwebappstore.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">iWebAppStore</div>
@@ -412,7 +449,8 @@
                                                      
                                  <li>
                                                 <a onclick="location='https://jailbreaks.app'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="https://jailbreaks.app/img/Jailbreaks.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                        class="lazy-fade-in lazy-loaded"                              src="https://jailbreaks.app/img/Jailbreaks.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">Jailbreaks</div>
@@ -423,7 +461,8 @@
                                             </li>    
                        <li>
                                                 <a onclick="location='https://drag0nos.ga'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="https://www.drag0nos.ga/Img/Drag0nOS.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                        class="lazy-fade-in lazy-loaded"                               src="https://www.drag0nos.ga/Img/Drag0nOS.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">Drag0nOS</div>
@@ -434,7 +473,8 @@
                                             </li>   
                         <li>
                                                 <a onclick="location='https://cydiaabdullah.com/App/'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="assets/default.png" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                        class="lazy-fade-in lazy-loaded"                               src="assets/default.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">CydiaAbdullah</div>
@@ -445,7 +485,8 @@
                                             </li>    
                          <li>
                                                 <a onclick="location='https://jsonlinedev.com/iConfigurator.php'" class="item-link item-content">
-                                                    <div class="item-media"><img style="border-radius: 23.3%;" src="https://jsonlinedev.com/serverdbs/assets/images/SetupAssistant.jpg" width="60"></div>
+                                                    <div class="item-media"><img style="border-radius: 23.3%;"
+                        class="lazy-fade-in lazy-loaded"                               src="https://jsonlinedev.com/images/mobconfig.png" width="60"></div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
                                                             <div class="item-title">iConfigurator</div>
@@ -453,7 +494,118 @@
                                                         <div class="item-subtitle">Configuration Profiles</div>
                                                     </div>
                                                 </a>
-                                            </li>                                                      </ul>
+                                            </li>
+                         <li>
+                                                <a onclick="location='https://getsileo.app'" class="item-link item-content">
+                                                    <div class="item-media"><img style="border-radius: 23.3%;" class="lazy-fade-in lazy-loaded" src="https://getsileo.app/img/icon.png" width="60"></div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">Sileo</div>
+                                                        </div>
+                                                        <div class="item-subtitle">Jailbreak Package Manager</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+<li>
+                                                <a onclick="location='https://sailyteam.github.io'" class="item-link item-content">
+                                                    <div class="item-media"><img style="border-radius: 23.3%;" class="lazy-fade-in lazy-loaded" src="https://sailyteam.github.io/img/icon.png" width="60"></div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">Saily</div>
+                                                        </div>
+                                                        <div class="item-subtitle">Jailbreak Package Manager</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                           <li>
+                                                <a onclick="location='https://apptapp.me/repo/'" class="item-link item-content">
+                                                    <div class="item-media"><img style="border-radius: 23.3%;" class="lazy-fade-in lazy-loaded" src="https://apptapp.me/repo/images/Installer.png" width="60"></div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">Installer5</div>
+                                                        </div>
+                                                        <div class="item-subtitle">Jailbreak Package Manager</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                           <li>
+                                                <a onclick="location='https://app.airport.community'" class="item-link item-content">
+                                                    <div class="item-media"><img style="border-radius: 23.3%;" class="lazy-fade-in lazy-loaded" src="https://app.airport.community/logo2.svg" width="60"></div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">Airport</div>
+                                                        </div>
+                                                        <div class="item-subtitle">TestFlight</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                            <li>
+                                                <a onclick="location='https://sideloadstore.me'" class="item-link item-content">
+                                                    <div class="item-media"><img style="border-radius: 23.3%;" class="lazy-fade-in lazy-loaded" src="http://sideloadstore.me/img/ssicon.png" width="60"></div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">SideloadStore</div>
+                                                        </div>
+                                                        <div class="item-subtitle">3rd Party App Store</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+<li>
+                                                <a onclick="location='https://bunnyinject.fun'" class="item-link item-content">
+                                                    <div class="item-media"><img style="border-radius: 23.3%;" class="lazy-fade-in lazy-loaded" src="https://bunnyinject.fun/img/bunnyinjecticon.png" width="60"></div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">BunnyInject</div>
+                                                        </div>
+                                                        <div class="item-subtitle">3rd Party App Store</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                          <li>
+                                                <a onclick="location='https://www.cokernutx.com/cokernutx_signed.mobileconfig'" class="item-link item-content">
+                                                    <div class="item-media"><img style="border-radius: 23.3%;" class="lazy-fade-in lazy-loaded" src="https://www.cokernutx.com/coker/img/icon.png" width="60"></div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">CokernutX</div>
+                                                        </div>
+                                                        <div class="item-subtitle">3rd Party App Store</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+<li>
+                                                <a onclick="location='https://app.iosgods.com/store/games'" class="item-link item-content">
+                                                    <div class="item-media"><img style="border-radius: 23.3%;" class="lazy-fade-in lazy-loaded" src="https://app.iosgods.com/apple-touch-icon.png" width="60"></div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">iOSGods</div>
+                                                        </div>
+                                                        <div class="item-subtitle">3rd Party App Store</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+<li>
+                                                <a onclick="location='https://app.ipabox.store/store'" class="item-link item-content">
+                                                    <div class="item-media"><img style="border-radius: 23.3%;" class="lazy-fade-in lazy-loaded" src="https://app.ipabox.store/uploads/icon/ErQqYeXL5117ZtXrV15mrsfWwNm5P88WZH4I5CMS.png" width="60"></div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">iPABox</div>
+                                                        </div>
+                                                        <div class="item-subtitle">3rd Party App Store</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+
+
+
+
+
+
+
+
+
+                  
+
+                                 </ul>
                                     </div>
                                 </div>
                             </div>
@@ -463,41 +615,53 @@
                                 <div class="page-content">
                            
 							<div class="block block-strong">
-							<div class="block-title">Settings</div>
-								<div class="row">
-									<div class="col-100">
-										<a href="itms-services://?action=download-manifest&amp;url=https://gitlab.com/Forelps/respring/-/raw/main/app.plist" class="button button-raised button-fill external">Respring</a>
-									</div>
-									<div class="col-100" style="margin-top: 16px">
+							<div class="block-title">Settings</div>								<div class="col-100" style="margin-top: 16px">
 										<a href="index.html" class="button button-raised button-fill external">Reload app</a>
 									</div>
 									<div class="col-100" style="margin-top: 16px">
-										<a href="assets/blockrevokes.mobileconfig" class="button button-raised button-fill external">Block revokes</a>
-								</div>
-								<div class="col-100" style="margin-top: 16px">
-										<a href="https://betaprofiles.dev/dl/block-ota" class="button button-raised button-fill external">Block software updates</a>
-								</div>
-									<div class="col-100" style="margin-top: 16px">
 										<a href="mailto:baloggabriel76@outlook.com?subject=tweakra1n feedback" class="button button-raised button-fill external">Send feedback</a>
 								</div>
+								<div class="col-100" style="margin-top: 16px">
+										<a href="javascript:Terms()" class="button button-raised button-fill external">Terms of service</a>
+								</div>
+								<div class="col-100" style="margin-top: 16px">
+										<a href="javascript:Changelog()" class="button button-raised button-fill external">Changelog</a>
+								</div>
+									<div class="block block-strong">
+									<div class="block-title">Other stuff</div>
+								<div class="row">
+									<div class="col-50">
+										<a href="itms-services://?action=download-manifest&url=https://gitlab.com/Forelps/respring/-/raw/main/app.plist" class="button button-raised button-fill external">Respring</a>
+									</div>
+                                    <div class="col-50">
+										<a href="https://tweakrain.tk/assets/blockrevokes.mobileconfig" class="button button-raised button-fill external">Block revokes</a>
+									</div>
+									<div class="col-50" style="margin-top:16px;">
+										<a href="https://cdn.adtidy.org/public/Dns/adguard-dns.mobileconfig" class="button button-raised button-fill external">Block ADS</a>
+									</div>
+									<div class="col-50" style="margin-top:16px;">
+										<a href="https://betaprofiles.dev/dl/block-ota/" class="button button-raised button-fill external">Block OTA</a>
+									</div>
+								</div>
+							</div>
 								<div class="block-title">Change icon</div>
                            <div class="slider">
 
-                <div><span onclick="location='https://github.com/Outland3r2007/Repo/raw/main/customicons/Icon1.mobileconfig'"><img style="width:70px;border-radius:15px;margin:5px;" src="customicons/Icon1.png"></img></span></div>
+                <div><span onclick="location='https://github.com/Outland3r2007/Repo/raw/main/customicons/Icon1.mobileconfig'"><img style="width:70px;border-radius:15px;margin:5px;"class="lazy-fade-in lazy-loaded" src="customicons/Icon1.png"></img></span></div>
 
-                <div><span onclick="location='https://github.com/Outland3r2007/Silic0nHub/raw/main/customicons/Silic0nHub2.mobileconfig'"><img style="width:70px;border-radius:15px;margin:5px;" src="assets/default.png"></img></span></div>
+                <div><span onclick="location='https://github.com/Outland3r2007/Silic0nHub/raw/main/customicons/Silic0nHub2.mobileconfig'"><img style="width:70px;border-radius:15px;margin:5px;"class="lazy-fade-in lazy-loaded" src="assets/default.png"></img></span></div>
 
-                <div><span onclick="location='https://github.com/Outland3r2007/Silic0nHub/raw/main/customicons/Silic0nHub3.mobileconfig'"><img style="width:70px;border-radius:15px;margin:5px;" src="assets/default.png"></img></span></div>
+                <div><span onclick="location='https://github.com/Outland3r2007/Silic0nHub/raw/main/customicons/Silic0nHub3.mobileconfig'"><img style="width:70px;border-radius:15px;margin:5px;"class="lazy-fade-in lazy-loaded" src="assets/default.png"></img></span></div>
 
-                <div><span onclick="location='https://github.com/Outland3r2007/Silic0nHub/raw/main/customicons/Silic0nHub4.mobileconfig'"><img style="width:70px;border-radius:15px;margin:5px;" src="assets/default.png"></img></span></div>
+                <div><span onclick="location='https://github.com/Outland3r2007/Silic0nHub/raw/main/customicons/Silic0nHub4.mobileconfig'"><img style="width:70px;border-radius:15px;margin:5px;"class="lazy-fade-in lazy-loaded" src="assets/default.png"></img></span></div>
 
-                <div><span onclick="location='https://github.com/Outland3r2007/Silic0nHub/raw/main/customicons/Silic0nHub5.mobileconfig'"><img style="width:70px;border-radius:15px;margin:5px;" src="assets/default.png"></img></span></div>
+                <div><span onclick="location='https://github.com/Outland3r2007/Silic0nHub/raw/main/customicons/Silic0nHub5.mobileconfig'"><img style="width:70px;border-radius:15px;margin:5px;"class="lazy-fade-in lazy-loaded" src="assets/default.png"></img></span></div>
 
-                <div><span onclick="location='https://github.com/Outland3r2007/Silic0nHub/raw/main/customicons/Silic0nHub6.mobileconfig'"><img style="width:70px;border-radius:15px;margin:5px;" src="assets/default.png"></img></span></div>
+                <div><span onclick="location='https://github.com/Outland3r2007/Silic0nHub/raw/main/customicons/Silic0nHub6.mobileconfig'"><img style="width:70px;border-radius:15px;margin:5px;"class="lazy-fade-in lazy-loaded" src="assets/default.png"></img></span></div>
 
-                <div><span onclick="location='https://github.com/Outland3r2007/Silic0nHub/raw/main/customicons/Silic0nHub7.mobileconfig'"><img style="width:70px;border-radius:15px;margin:5px;" src="assets/default.png"></img></span></div>
+                <div><span onclick="location='https://github.com/Outland3r2007/Silic0nHub/raw/main/customicons/Silic0nHub7.mobileconfig'"><img style="width:70px;border-radius:15px;margin:5px;"class="lazy-fade-in lazy-loaded" src="assets/default.png"></img></span></div>
 
-                <div><span onclick="location='https://github.com/Outland3r2007/Silic0nHub/raw/main/customicons/Silic0nHub8.mobileconfig'"><img style="width:70px;border-radius:15px;margin:5px;" src="assets/default.png"></img></span></div>
+                <div><span onclick="location='https://github.com/Outland3r2007/Silic0nHub/raw/main/customicons/Silic0nHub8.mobileconfig'"><img style="width:70px;border-radius:15px;margin:5px;"class="lazy-fade-in lazy-loaded" src="assets/default.png"></img></span></div>
                 <div>
                             </div>
                             </div>
@@ -507,7 +671,19 @@
                 <script src="https://cdn.jsdelivr.net/npm/framework7@7/framework7-bundle.min.js"></script>
                 <script src="js/routes.js"></script>
                 <script src="js/app.js"></script>
-                <script src="service-worker.js"</script>
+                <script src="js/nobounce.js"></script>
+               <script>
+function Changelog() {
+  alert("tweakra1n v2.0.0\n\nWhat's new?\n•UI Changes.\n•New tweaks\n•Bug fixes and improvements.");
+}
+</script>
+<script>
+function Terms() {
+  alert("By using tweakra1n you have to agree with the following terms of service:\n•You agree that some tweaks or apps may collect data.\n•You agree that we are not responsible for any damage produced by Jailbreaking apps or other apps\n•You agree not to recreate,copy or sell tweakra1n.\n\nIf you have any questions or concerns use the Feedback button in the Settings page.");
+}
+</script>
+
+
 
 
 </div></div></div></div>
