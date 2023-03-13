@@ -1,0 +1,54 @@
+{
+    "info": [
+        {
+            "name": "tweakra1n",
+            "icon": "https://tweakrain.tk/assets/favicon.ico",
+            "status": "Always revoked :("
+        }
+    ],
+    "socials": [
+        {
+            "name": "Twitter",
+            "icon": "https://cdn-icons-png.flaticon.com/512/124/124021.png",
+            "link": "https://twitter.com/Outland3r2007/"
+        },
+    ],
+    "apps": [
+        {
+            "title": "tweakra1n",
+            "icon": "https://tweakrain.tk/assets/favicon.ico",
+            "developer": "Outland3r2007",
+            "link": "https://tweakrain.tk"
+        },
+        {
+            "title": "App 3",
+            "icon": "https://cdn-icons-png.flaticon.com/512/124/124021.png",
+            "developer": "Zeus",
+            "link": ""
+        },
+        {
+            "title": "App 4",
+            "icon": "https://cdn-icons-png.flaticon.com/512/124/124021.png",
+            "developer": "Zeus",
+            "link": ""
+        },
+        {
+            "title": "App 5",
+            "icon": "https://cdn-icons-png.flaticon.com/512/124/124021.png",
+            "developer": "Zeus",
+            "link": ""
+        },
+        {
+            "title": "App 33",
+            "icon": "https://cdn-icons-png.flaticon.com/512/124/124021.png",
+            "developer": "Zeus",
+            "link": ""
+        },
+        {
+            "title": "App 8",
+            "icon": "https://cdn-icons-png.flaticon.com/512/124/124021.png",
+            "developer": "Zeus",
+            "link": ""
+        }
+    ]
+}
